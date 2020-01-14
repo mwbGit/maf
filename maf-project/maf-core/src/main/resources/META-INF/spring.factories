@@ -1,0 +1,19 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.mwb.maf.core.logging.Log4j2ContextInitializer
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mwb.maf.core.web.FastJsonAutoConfiguration,\
+com.mwb.maf.core.base.CustomizedPropertiesBinderAutoConfiguration,\
+com.mwb.maf.core.base.FrameworkConfigAutoConfiguration,\
+com.mwb.maf.core.base.SpringApplicationEventListenerAutoConfiguration,\
+com.mwb.maf.core.web.WebAutoConfiguration,\
+com.mwb.maf.core.kv.JedisListenerAutoConfiguration,\
+com.mwb.maf.core.kv.JedisAutoConfiguration,\
+com.mwb.maf.core.kv.JedisClusterAutoConfiguration,\
+com.mwb.maf.core.rpc.MotanAutoConfiguration,\
+com.mwb.maf.core.rpc.MotanConfigListenerAutoConfiguration,\
+com.mwb.maf.core.db.DataSourceListenerAutoConfiguration,\
+com.mwb.maf.core.db.DataSourceMybatisAutoConfiguration,\
+com.mwb.maf.core.sentinel.SentinelAutoConfiguration,\
+com.mwb.maf.core.web.CHttpClientAutoConfiguration,\
+com.mwb.maf.core.rocketmq.core.RocketMQAutoConfiguration

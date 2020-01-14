@@ -1,0 +1,459 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.mwb.maf.core.kv.JedisClusterAutoConfiguration",
+      "name": "app.jedis-cluster.default.pool",
+      "sourceMethod": "jedisPoolConfig()",
+      "type": "redis.clients.jedis.JedisPoolConfig"
+    },
+    {
+      "sourceType": "com.mwb.maf.core.kv.JedisAutoConfiguration",
+      "name": "app.jedis.default.pool",
+      "sourceMethod": "jedisPoolConfig()",
+      "type": "redis.clients.jedis.JedisPoolConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.check",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.retries",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.request-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.actives",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.version",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.group",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.module",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicRefererInterfaceConfig",
+      "name": "app.motan.default.basic-referer.application",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.check",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.retries",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.request-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.actives",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.version",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.group",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.module",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.BasicServiceInterfaceConfig",
+      "name": "app.motan.default.basic-service.application",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.address",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.is-default",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.subscribe",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.register",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.check",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.registry-retry-period",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.registry-session-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.connect-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.request-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.registry.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.address",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.is-default",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.subscribe",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.register",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.check",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.registry-retry-period",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.registry-session-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.connect-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.request-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.RegistryConfig",
+      "name": "app.motan.default.registry.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.is-default",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.retries",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.ha-strategy",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.cluster",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.loadbalance",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.max-client-connection",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.min-client-connection",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.max-worker-thread",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.min-worker-thread",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.weibo.api.motan.config.ProtocolConfig",
+      "name": "app.motan.default.protocol.request-timeout",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.block-when-exhausted",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.eviction-policy-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.evictor-shutdown-timeout-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.fairness",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.jmx-enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.jmx-name-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.jmx-name-prefix",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.lifo",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.max-total",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.max-wait-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.min-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.num-tests-per-eviction-run",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.soft-min-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.test-on-borrow",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.test-on-create",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.test-on-return",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.test-while-idle",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis-cluster.default.pool.time-between-eviction-runs-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.block-when-exhausted",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.eviction-policy-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.evictor-shutdown-timeout-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.fairness",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.jmx-enabled",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.jmx-name-base",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.jmx-name-prefix",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.lifo",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.max-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.max-total",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.max-wait-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.min-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.min-idle",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.num-tests-per-eviction-run",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.soft-min-evictable-idle-time-millis",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.test-on-borrow",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.test-on-create",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.test-on-return",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.test-while-idle",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "redis.clients.jedis.JedisPoolConfig",
+      "name": "app.jedis.default.pool.time-between-eviction-runs-millis",
+      "type": "java.lang.Long"
+    }
+  ]
+}
