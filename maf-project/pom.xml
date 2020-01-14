@@ -6,7 +6,7 @@
     <parent>
         <artifactId>maf-boot-parent</artifactId>
         <groupId>com.mwb.maf</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1-RELEASE</version>
         <relativePath>./maf-boot-parent</relativePath>
     </parent>
 

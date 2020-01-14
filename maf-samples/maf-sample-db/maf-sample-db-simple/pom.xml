@@ -4,7 +4,7 @@
     <parent>
         <artifactId>maf-sample-db</artifactId>
         <groupId>com.mwb.maf</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>maf-sample-db-simple</artifactId>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.mwb.maf</groupId>
             <artifactId>maf-sample-api</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.1-RELEASE</version>
         </dependency>
     </dependencies>
 

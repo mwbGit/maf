@@ -11,7 +11,7 @@
     <groupId>com.mwb.maf</groupId>
     <artifactId>maf-boot-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1-RELEASE</version>
 
     <properties>
         <spring.boot.version>2.1.1.RELEASE</spring.boot.version>
@@ -86,53 +86,53 @@
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-core</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-common</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-web</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-json</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-db</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-kv</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-logging</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-rpc</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
 
             <dependency>
                 <groupId>com.mwb.maf</groupId>
                 <artifactId>maf-boot-starter-rocketmq</artifactId>
-                <version>1.0.1-SNAPSHOT</version>
+                <version>1.0.1-RELEASE</version>
             </dependency>
             <!-- Json -->
             <dependency>
