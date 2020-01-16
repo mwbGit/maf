@@ -5,7 +5,7 @@
     <parent>
         <artifactId>maf-boot-starters</artifactId>
         <groupId>com.mwb.maf</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.0.1-RELEASE</version>
     </parent>
 
     <artifactId>maf-boot-starter-web</artifactId>

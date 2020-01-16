@@ -1,5 +1,4 @@
-
-## 《使用说明》
+## 《使用说明》 --ZhangRongBin/HePengYuan
 #### 一、数据源
 ##### 根据namespace和mapperPackages来区分不同数据源
 ######  1、启动注解，namespace默认default
