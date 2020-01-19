@@ -2,6 +2,7 @@
 org.springframework.context.ApplicationContextInitializer=\
 com.mwb.maf.core.logging.Log4j2ContextInitializer
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.mwb.maf.core.logging.LoggingAutoConfiguration,\
 com.mwb.maf.core.web.FastJsonAutoConfiguration,\
 com.mwb.maf.core.base.CustomizedPropertiesBinderAutoConfiguration,\
 com.mwb.maf.core.base.FrameworkConfigAutoConfiguration,\

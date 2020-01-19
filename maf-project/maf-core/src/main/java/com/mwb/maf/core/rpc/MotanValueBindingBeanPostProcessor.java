@@ -87,7 +87,6 @@ public class MotanValueBindingBeanPostProcessor extends BaseMotanConfiguration i
 
             Bindable<?> target = Bindable.of(BasicServiceConfigBean.class).withExistingValue(basicServiceConfigBean);
             binder.bind(PREFIX_APP_MOTAN + "." + sourceName + ".basic-service", target);
-
         } else if (bean instanceof BasicRefererConfigBean) {
             String sourceName = StringUtils.substringBefore(beanName, BasicRefererConfigBean.class.getSimpleName());
 

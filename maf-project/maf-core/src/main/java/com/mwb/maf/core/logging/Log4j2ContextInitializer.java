@@ -21,7 +21,7 @@ public class Log4j2ContextInitializer implements ApplicationContextInitializer<C
     private ConfigurableApplicationContext applicationContext;
 
     private static final String LOG_PATH = "app.logging.path";
-    private static final String DEFAULT_LOG_PATH = "/data/logs/mwb";
+    private static final String DEFAULT_LOG_PATH = "/data/logs/maf";
 
     @Override
     public void initialize(ConfigurableApplicationContext configurableApplicationContext) {
@@ -42,9 +42,9 @@ public class Log4j2ContextInitializer implements ApplicationContextInitializer<C
         System.setProperty("app.logging.path", path);
         System.setProperty("app.logging.level", level);
 
-        String location = getPackagedConfigFile("log4j2-caf.xml");
+        String location = getPackagedConfigFile("log4j2-maf.xml");
         if (StringUtils.endsWithIgnoreCase(System.getProperty("app.logging.mode"), "dev")) {
-            location = getPackagedConfigFile("log4j2-caf-dev.xml");
+            location = getPackagedConfigFile("log4j2-maf-dev.xml");
         }
         try {
             LoggerContext loggerContext = LoggerContext.getContext(false);
@@ -72,4 +72,5 @@ public class Log4j2ContextInitializer implements ApplicationContextInitializer<C
         }
         return new ConfigurationSource(stream, url);
     }
+
 }

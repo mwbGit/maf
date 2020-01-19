@@ -2,12 +2,14 @@ package com.mwb.maf.core.web;
 
 import com.mwb.maf.core.metrics.ProfilerHttpFilter;
 import com.mwb.maf.core.sentinel.SentinelHttpInterceptor;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.boot.web.servlet.error.ErrorController;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.Ordered;
@@ -22,11 +24,13 @@ import javax.servlet.http.HttpServletRequest;
 @ConditionalOnClass(HttpServletRequest.class)
 @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE)
 @ConditionalOnWebApplication
-public class WebAutoConfiguration {
+public class WebAutoConfiguration implements ApplicationContextAware {
     @Value("${app.monitor.profile.http.enable:true}")
     private boolean enableHttpProfiler;
     @Value("${app.trace.http.enable:true}")
     private boolean enableHttpTracingInterceptor;
+
+    private ApplicationContext applicationContext;
 
     @Bean
     @Order(Ordered.HIGHEST_PRECEDENCE)
@@ -39,7 +43,7 @@ public class WebAutoConfiguration {
                 }
                 registry.addInterceptor(new SentinelHttpInterceptor()).addPathPatterns("/**");
                 if (enableHttpTracingInterceptor) {
-                    registry.addInterceptor(new HttpTracingInterceptor()).addPathPatterns("/**");
+                    registry.addInterceptor(new HttpTracingInterceptor(applicationContext)).addPathPatterns("/**");
                 }
             }
         };
@@ -56,13 +60,13 @@ public class WebAutoConfiguration {
         return registration;
     }
 
-    //@Bean
-    public ErrorController errorController() {
-        return new CustomErrorController();
-    }
-
     @Bean
     public ProjectInfoController projectInfoController() {
         return new ProjectInfoController();
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
     }
 }

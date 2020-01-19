@@ -28,6 +28,7 @@ public class DataSourceValueBindingBeanPostProcessor extends BaseDataSourceConfi
     private Environment environment;
     private BeanFactory beanFactory;
 
+    @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
         if (bean instanceof DruidDataSource) {
@@ -38,6 +39,9 @@ public class DataSourceValueBindingBeanPostProcessor extends BaseDataSourceConfi
                 druidDataSource.clearFilters();
             }
             Bindable<?> target = Bindable.of(DruidDataSource.class).withExistingValue(druidDataSource);
+            String url = PREFIX_APP_DATASOURCE + "." + namespace + ".data-source.url";
+            String urlVal = environment.getProperty(url);
+            Assert.isTrue(StringUtils.isNotEmpty(urlVal), String.format("%s=%s must be not null! ", url, urlVal));
             binder.bind(PREFIX_APP_DATASOURCE + "." + namespace + ".data-source", target);
 
         } else if (bean instanceof SqlSessionFactoryBean) {
@@ -47,7 +51,6 @@ public class DataSourceValueBindingBeanPostProcessor extends BaseDataSourceConfi
             DataSource dataSource = beanFactory.getBean(namespace + DataSource.class.getSimpleName(), DataSource.class);
             String typeAliasesPackageKey = PREFIX_APP_DATASOURCE + "." + namespace + ".type-aliases-package";
             String typeAliasesPackage = environment.getProperty(typeAliasesPackageKey);
-            Assert.isTrue(StringUtils.isNotEmpty(typeAliasesPackage), String.format("%s=%s must be not null! ", typeAliasesPackageKey, typeAliasesPackage));
             initSqlSessionFactoryBean(dataSource, typeAliasesPackage, sqlSessionFactoryBean);
 
         } else if (bean instanceof DataSourceTransactionManager) {

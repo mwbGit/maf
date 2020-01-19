@@ -126,4 +126,42 @@ public class UserApiImpl implements UserApi{}
  @MotanReferer(basicReferer = "mallBasicRefererConfigBean")
     private MallApi mallApi;
 
-、、、
+```
+#### 五、链路日志
+##### namespace可以和@EnableDataSource同一个
+###### 1、启动注解，namespace默认default，write启动写入db
+```
+@EnableTraceLog(namespace = "log", write = true)
+```
+###### 2、配置文件(同@EnableDataSource)，集群固定前缀app.motan.#namespace#.*
+```
+app.db.log.data-source.url=jdbc:mysql://127.0.0.1:3306/mwb?useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
+app.db.log.data-source.username=admin
+app.db.log.data-source.password=admin
+app.db.log.type-aliases-package=com.mwb.app.sample.db
+app.db.log.data-source.initial-size=2
+app.db.log.data-source.max-active=10
+app.db.log.data-source.min-idle=2
+```
+###### 3、开启写入db的sql
+```
+CREATE TABLE `maf_log` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `trace_id` char(36) NOT NULL,
+  `service_ip` char(16) NOT NULL COMMENT '服务地址',
+  `start_time` bigint(20) NOT NULL,
+  `end_time` bigint(20) NOT NULL,
+  `process_time` bigint(20) NOT NULL COMMENT '耗时',
+  `log` text NOT NULL,
+  `type` tinyint(4) NOT NULL COMMENT '0:http,1:rpc,3:db',
+  `add_time` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_service_id` (`service_ip`),
+  KEY `idx_start_time` (`start_time`),
+  KEY `idx_trace_id` (`trace_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb4;
+```
+###### 4、自定义使用
+```
+实现接口com.mwb.maf.core.logging.LoggingNotice
+```
